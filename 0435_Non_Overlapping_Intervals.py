@@ -6,9 +6,9 @@ class Solution:
     def eraseOverlapIntervals(self, intervals: List[List[int]]) -> int:
         intervals.sort(key=lambda x: x[1])
         n, m = 0, float('-inf')
-        for i in range(len(intervals)):
-            if intervals[i][0] >= m:
-                m = intervals[i][1]
+        for interval in intervals:
+            if interval[0] >= m:
+                m = interval[1]
                 n += 1
         return len(intervals) - n
 
