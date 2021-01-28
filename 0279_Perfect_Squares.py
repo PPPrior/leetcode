@@ -11,4 +11,4 @@ class Solution:
         return dp[-1]
 
 
-print(Solution().numSquares(40))
+print(Solution().numSquares(n=40))

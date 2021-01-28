@@ -13,4 +13,4 @@ class Solution:
         return len(intervals) - n
 
 
-print(Solution().eraseOverlapIntervals([[1, 2], [2, 3], [3, 4], [-100, -2], [5, 7]]))
+print(Solution().eraseOverlapIntervals(intervals=[[1, 2], [2, 3], [3, 4], [-100, -2], [5, 7]]))

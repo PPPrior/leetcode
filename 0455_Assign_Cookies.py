@@ -18,4 +18,4 @@ class Solution:
         return count
 
 
-print(Solution().findContentChildren([3, 2, 1], [1, 1]))
+print(Solution().findContentChildren(g=[3, 2, 1], s=[1, 1]))

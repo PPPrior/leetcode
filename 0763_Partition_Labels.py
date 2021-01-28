@@ -15,4 +15,4 @@ class Solution:
         return ans
 
 
-print(Solution().partitionLabels("ababcbacadefegdehijhklij"))
+print(Solution().partitionLabels(S="ababcbacadefegdehijhklij"))

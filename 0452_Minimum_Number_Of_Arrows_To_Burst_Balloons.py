@@ -13,4 +13,4 @@ class Solution:
         return n
 
 
-print(Solution().findMinArrowShots([[1, 2], [2, 3], [3, 4], [4, 5]]))
+print(Solution().findMinArrowShots(points=[[1, 2], [2, 3], [3, 4], [4, 5]]))

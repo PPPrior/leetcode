@@ -15,4 +15,4 @@ class Solution:
         return sum(m)
 
 
-print(Solution().candy([1, 3, 4, 5, 2]))
+print(Solution().candy(ratings=[1, 3, 4, 5, 2]))

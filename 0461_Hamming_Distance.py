@@ -6,4 +6,4 @@ class Solution:
         return bin(x ^ y).count('1')
 
 
-print(Solution().hammingDistance(1, 4))
+print(Solution().hammingDistance(x=1, y=4))

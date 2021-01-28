@@ -12,4 +12,4 @@ class Solution:
         return n <= 0
 
 
-print(Solution().canPlaceFlowers([1, 0, 0, 0, 1, 0, 0], 2))
+print(Solution().canPlaceFlowers(flowerbed=[1, 0, 0, 0, 1, 0, 0], n=2))
