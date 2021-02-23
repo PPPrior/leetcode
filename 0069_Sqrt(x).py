@@ -6,9 +6,9 @@ class Solution:
         i, j = 0, x
         while i <= j:
             k = (i + j) // 2
-            if k ** 2 > x:
+            if k * k > x:
                 j = k - 1
-            elif (k + 1) ** 2 <= x:
+            elif (k + 1) * (k + 1) <= x:
                 i = k + 1
             else:
                 return k
