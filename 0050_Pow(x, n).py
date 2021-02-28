@@ -7,7 +7,7 @@ class Solution:
             if n == 0:
                 return 1
             else:
-                t = self.myPow(x, n // 2)
+                t = fastPow(x, n // 2)
                 return t * t * x if n & 1 else t * t
 
         return fastPow(x, n) if n > 0 else 1 / fastPow(x, -n)
