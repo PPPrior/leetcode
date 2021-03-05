@@ -17,6 +17,7 @@ class Solution:
             '9': 'wxyz'
         }
 
+        # DFS
         def backtrace(combination, digits):
             if digits:
                 for letter in phone[digits[0]]:
