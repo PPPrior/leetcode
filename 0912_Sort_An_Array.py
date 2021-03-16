@@ -58,6 +58,30 @@ def partition(nums, lo, hi):
     return lo
 
 
+# Heap Sort
+def heapSort(nums):
+    n = len(nums)
+    for i in range(n // 2 - 1, -1, -1):
+        adjust(nums, i, n)
+    for j in range(n - 1, 0, -1):
+        nums[0], nums[j] = nums[j], nums[0]
+        adjust(nums, 0, j)
+    return nums
+
+
+def adjust(nums, i, n):
+    temp = nums[i]
+    while (k := i * 2 + 1) < n:
+        if k + 1 < n and nums[k] < nums[k + 1]:
+            k += 1
+        if temp < nums[k]:
+            nums[i] = nums[k]
+            i = k
+        else:
+            break
+    nums[i] = temp
+
+
 class Solution:
     def sortArray(self, nums: List[int]) -> List[int]:
         return quickSort(nums, 0, len(nums) - 1)
