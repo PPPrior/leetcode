@@ -1,4 +1,4 @@
-""" Backtracing """
+""" Dynamic Programming """
 
 
 class Solution:
