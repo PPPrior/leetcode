@@ -19,7 +19,6 @@ output:
 
 
 def solution(n, path, pref):
-    dp = [[0] * n for _ in range(n)]
     for i in range(n):
         for j in range(i + 1, n):
             path[j][i] = path[i][j] = min([path[i][k] + path[k][j] for k in range(n)])
