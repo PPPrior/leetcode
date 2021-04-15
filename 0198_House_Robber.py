@@ -14,4 +14,4 @@ class Solution:
         return y
 
 
-print(Solution().rob(nums=[4, 1, 2, 7, 5, 3, 1]))
+print(Solution().rob(nums=[2, 7, 9, 3, 1]))
