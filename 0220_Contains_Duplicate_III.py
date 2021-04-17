@@ -1,4 +1,4 @@
-""" Sort Algorithm """
+""" Sliding Window """
 from typing import List
 
 
